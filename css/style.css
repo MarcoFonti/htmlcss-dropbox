@@ -1,6 +1,59 @@
+:root {
+    --dimesioni-contenitore-1200: 1200px;
+    --dimensioni-contenitore-1080: 1800px;
+}
+
 /* ! Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box 
 }
+
+/* ! Utility */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.back-blu {
+    background-color: #0061FF;
+    color: #FFFFFF;
+    padding: 5px 10px ;
+}
+
+/* ? Inzio */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a:not(.back-blu) {
+    color: #858585;
+}
+
+
+
+
