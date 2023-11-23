@@ -29,14 +29,21 @@ ul {
     list-style: none;
 }
 
+/* Bottoni */
 .back-blu {
     background-color: #0061FF;
     color: #FFFFFF;
     padding: 5px 10px ;
 }
 
+h1 {
+    font-size: 60px;
+    padding-right: 80px;
+}
+
 /* ? Inzio */
 
+/* Disposizione della Navabar */
 .navbar {
     display: flex;
     align-items: center;
@@ -45,15 +52,63 @@ ul {
     padding: 30px;
 }
 
+/* Spazio Tra gli elementi */
 .navbar ul {
     display: flex;
     gap: 30px;
 }
 
+/* Tutte le A con lo stesso colore TRANNE .back-blu */
 .navbar a:not(.back-blu) {
     color: #858585;
 }
 
+/* Sezione Primaria */
+.everything-need {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B4D0E7;
+    text-align: start;
+    padding-top: 50px;
+}
 
+/* Dimensioni del contenitore di h1, w-40 e w-60 */
+.son-container-need {
+    width: var(--dimesioni-contenitore-1200);
+    position: relative;
+}
 
+/* Contenitore di w-40 e w60 */
+.box-tex-img {
+    display: flex;
+}
 
+.w-40 {
+    width: 35%;
+}
+
+.w-60 {
+    width: 65%;
+}
+
+/* Modifico solo le P e A che sono dentro a w-40 */
+.w-40 p,a {
+    margin: 30px 0;
+    padding-right: 80px;
+    font-size: 16px;
+}
+
+/* Modifico solo le I che sono dentro a w-40 */
+.w-40 i {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+/* Immagine dentro w-60 */
+.w-60 img {
+    margin-top: 30px;
+    position: absolute; 
+    height: 400px;
+}
