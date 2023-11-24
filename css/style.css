@@ -26,6 +26,7 @@ img {
 /* Tutte le A tranne .tex-line */
 a:not(.text-line) {
     text-decoration: none;
+    text-align: center;
 }
 
 /* Tutti gli ul senza puntino */
@@ -42,7 +43,6 @@ ul {
 .back-blu {
     background-color: #0061FF;
     color: #FFFFFF;
-    padding: 5px 10px ;
 }
 
 /* Dimensione degli H1*/
@@ -63,23 +63,33 @@ h2 {
 
 /* ? Inzio */
 
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
 /* Disposizione della Navabar */
 .navbar {
     align-items: center;
     justify-content: space-between;
     background-color: #FFFFFF;
     padding: 30px;
+    box-shadow: 0px 2px 5px #858585;
 }
-
 /* Spazio Tra gli elementi */
 .navbar ul {
     display: flex;
     gap: 30px;
 }
+.navbar .back-blu {
+    padding: 5px 10px ;
+}
 
 /* Tutte le A con lo stesso colore TRANNE .back-blu */
 .navbar a:not(.back-blu) {
-    color: #858585;
+    color:#858585;
 }
 
 /* Sezione Primaria */
@@ -234,6 +244,10 @@ h2 {
     margin-bottom: 20px;
 }
 
+.container-padding a {
+    justify-content: center;
+    padding: 10px 15px ;
+}
 /* Dimensioni righettax10*/
 .dash-x10 {
     height: 2px;
@@ -291,11 +305,29 @@ h2 {
 /* A dentro a .container-parther */
 .container-parther a {
     border:2px solid #858585;
-    padding: 5px 10px ;
+    padding: 10px 15px ;
     color: #858585;
 }
 
+/* Contenitore Sezione Operation */
+.row-operations {
+    width: var(--dimensioni-contenitore-1000);
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
 
+/* Percentuale del contenitore su una riga */
+.row-operations .col {
+    width: calc(100% / 3);
+    padding: 3px;
+}
+
+/* Contenitore Grande del titolo */
+.full-col {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    flex-basis: 100%;
+}
 
 
 
