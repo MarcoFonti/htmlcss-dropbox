@@ -17,19 +17,24 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Imaggini che prendo il larghezza del 100% */
+/* Imaggini */
 img {
     max-width: 100%;
     display: block;
 }
 
-/* Tutte le A tranne .tex-line */
+/* Tutti i Link tranne .tex-line */
 a:not(.text-line) {
     text-decoration: none;
     text-align: center;
 }
 
-/* Tutti gli ul senza puntino */
+.text-line {
+    display: inline-block;
+    color: #8881F2;
+}
+
+/* Tutte le liste senza punto */
 ul {
     list-style: none;
 }
@@ -39,7 +44,7 @@ ul {
     display: flex;
 }
 
-/* Bottoni Sfondo Blu */
+/* Link sfondo Blu */
 .back-blu {
     background-color: #0061FF;
     color: #FFFFFF;
@@ -63,6 +68,7 @@ h2 {
 
 /* ? Inzio */
 
+/* Header fisso */
 header {
     position: sticky;
     left: 0;
@@ -78,16 +84,19 @@ header {
     padding: 30px;
     box-shadow: 0px 2px 5px #858585;
 }
+
 /* Spazio Tra gli elementi */
 .navbar ul {
     display: flex;
     gap: 30px;
 }
+
+/*Link blu della navbar */
 .navbar .back-blu {
     padding: 5px 10px ;
 }
 
-/* Tutte le A con lo stesso colore TRANNE .back-blu */
+/* Tutti i Link con lo stesso colore TRANNE .back-blu */
 .navbar a:not(.back-blu) {
     color:#858585;
 }
@@ -98,16 +107,20 @@ header {
     justify-content: center;
     background-color: #B4D0E7;
     text-align: start;
-    padding-top: 50px;
 }
 
-/* Dimensioni del contenitore di h1, w-40 e w-60 */
+/* Dimensioni del contenitore Primario */
 .son-container-need {
     width: var(--dimesioni-contenitore-1200);
     position: relative;
-    top: 0;
+    top: 60px;
     left: 0;
     padding-left: 3%;
+}
+
+/* Contenitore dei contenuti di w-40 e w-60*/
+.box-jumbo {
+    margin-top: 50px;
 }
 
 /* Dimensione del contenitore .w-40 */
@@ -116,38 +129,39 @@ header {
     padding-right: 60px;
 }
 
+/* Modifico solo le Icone che sono dentro a w-40 */
+.w-40 i {
+    margin-top: 50px;
+}
+
+/* Modifico tutti i Paragrafi tranne .text-none e solo i Link che sono dentro a w-40 */
+.w-40 a,p:not(.text-none) {
+    margin: 20px 0;
+}
+
+/* Paragrafo dentro */
+.team-secondary p {
+    margin-top: 50px;
+}
+
 /* Dimensione del contenitore .w-60 */
 .w-60 {
     width: 65%;
 }
 
-/* ! Modifico solo le P e A che sono dentro a w-40 */
-.w-40 a, p {
-    margin: 30px 0;
-}
-
-/* Modifico solo le I che sono dentro a w-40 */
-.w-40 i {
-    margin-top: 35px;
-    margin-bottom: 15px;
-    font-size: 40px;
-}
-
 /* Immagine dentro w-60 */
 .w-60 img {
-    margin-top: 30px;
-    position: absolute;
     height: 390px;
 }
 
-/* Contenutore della Sezione subscription */
+/* Sezione subscription */
 .subscription {
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 130px;
 }
 
-/* Contenitore dimensioni più piccole per il contenuto */
+/* Dimensioni del contenitore Secondario */
 .container-subscription {
     width: var(--dimensioni-contenitore-1000);
 }
@@ -159,8 +173,9 @@ header {
 
 /* Contenitore dei input radio */
 .box-input {
-    margin-top: 30px;
+    margin-top: 50px;
 }
+
 /* Opzione 1 */
 #opzione1 {
     margin-bottom: 30px;
@@ -176,7 +191,15 @@ header {
     flex-wrap: wrap;
 }
 
-/* Prendi tutto contenitori TRANNE .team-secondary */
+/* Bordo dei contenuti */
+.box-border {
+    border: 0.5px solid #858585;
+    margin-top: 40px;
+    margin: 10px;
+    padding-bottom: 25px;
+}
+
+/* Prendo tutti i contenitori TRANNE .team-secondary */
 .container-plans > *:not(.team-secondary)  {
     flex-basis: calc(100% / 3 - 20px);
 }
@@ -194,7 +217,7 @@ header {
     margin-left: 5px;
 }
 
-/* anno del piano */
+/* Anno del piano */
 .anno {
     display: block;
     color: #858585;
@@ -208,56 +231,52 @@ header {
     width: 5px;
     background-color: #858585;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 62px;
 }
 
-/* Bordo dei contenuti */
-.box-border {
-    border: 0.5px solid #858585;
-    margin-top: 40px;
-    margin: 10px;
-}
-
-/* Il contenitore genitore dei contenuti */
+/* Il contenitore dei contenuti */
 .container-padding {
     padding: 0 30px;
     padding-top: 20px;
 }
 
-/* H3 e H4 dentro al suo genitore */
+/* H3 e H4 dentro */
 .container-padding h3, h4 {
     margin-bottom: 15px;
 }
 
-/* LI dentro al suo genitore */
+/* Liste dentro */
 .container-padding li {
-    padding-bottom: 15px;
+    padding: 10px 0px;
 }
 
-/* I dentro al suo genitore */
+/* Link dentro */
 .container-padding i {
     padding-right: 5px;
 }
 
-/* UL dentro al suo genitore */
-.container-padding ul {
-    margin-bottom: 20px;
+/* Spazio lista Utenti */
+.space {
+    margin: 30px 0px;
 }
 
-.container-padding a {
+/* Link in centro */
+.container-padding a:not(.text-line),
+.son-container-need a {
     justify-content: center;
-    padding: 10px 15px ;
+    padding: 10px 15px;
 }
-/* Dimensioni righettax10*/
+
+/* Dimensioni righetta-x10 */
 .dash-x10 {
     height: 2px;
     width: 60px;
     background-color: #DCDCDE;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
-/* Dimensione dei contenitori di .team-secondary */
+/* Dimensione dei contenuti del .team-secondary */
 .w-70 {
     width: 70%;
 }
@@ -267,13 +286,13 @@ header {
     text-align: end;
 }
 
-/* Contenitore Sezione parther */
+/* Sezione parther */
 .parther-dropbox {
     justify-content: center;
     align-items: center;
 }
 
-/* Contenitore che si restringe */
+/* Dimensione del contenitore della sezione parther */
 .container-parther {
     width: var(--dimensioni-contenitore-1000);
     margin-top: 100px;
@@ -290,29 +309,32 @@ header {
     width: 90%;
 }
 
-/* Dimensioni contenuto .container-parther */ 
+/* Dimensioni contenitore */ 
 .w-35 {
     width: 35%;
     text-align: start;
     padding: 50px 0px;
+    margin-top: 10px;
 }
 
-/* Dimensioni del H3 dentro a .container-parther */
+/* Dimensioni del H3 dentro */
 .container-parther h3 {
     font-size: 25px;
 }
 
-/* A dentro a .container-parther */
+/* Link dentro */
 .container-parther a {
     border:2px solid #858585;
     padding: 10px 15px ;
     color: #858585;
+    display: inline-block;
+    margin-top: 20px;
 }
 
-/* Contenitore Sezione Operation */
+/* Sezione Operation */
 .row-operations {
     width: var(--dimensioni-contenitore-1000);
-    margin: 0 auto;
+    margin: 70px auto;
     flex-wrap: wrap;
 }
 
@@ -325,57 +347,55 @@ header {
 /* Contenitore Grande del titolo */
 .full-col {
     margin-bottom: 30px;
-    margin-top: 50px;
     flex-basis: 100%;
 }
 
 /* Contenitore dei clienti che utilizzano Dropbox */
 .items-clients {
     width: var(--dimensioni-contenitore-1000);
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
-/* H2 dentro a .items-clients */
+/* H2 dentro */
 .items-clients h2 {
     padding-right: 370px;
-    margin-top: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
-/* Contenitore domande frequenti */
+/* Sezione domande frequenti */
 .container-requests {
     width: var(--dimensioni-contenitore-1000);
-    margin: 0 auto;
+    margin: 100px auto;
     margin-top: 40px;
 }
 
-/* elementi dentro al contenitore delle domande frequenti */
+/* H2 dentro */
+.container-requests h2 {
+    margin-bottom: 50px
+}
+
+/* Liste dentro */
 .container-requests li {
     padding: 30px 0px;
     border-top: 1px solid #858585;
 }
 
-.container-requests h2 {
-    margin-bottom: 50px
+/* Bordo dell'ultima Lista */
+.border-bot {
+    border-bottom: 1px solid #858585;
 }
 
+/* Icone */
 .container-requests i {
     margin-left: 360px;
 }
 
-.border-bot {
-    border-bottom: 1px solid #858585;
-    margin-bottom: 20px;
-}
-
-/* Footer*/
+/* Footer */
 footer {
-    background-color: black;
+    background-color: #000000;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 
 /* Contenitore elementi footer */
@@ -392,36 +412,43 @@ footer {
     color: #ffffff;
     margin-top: 70px;
     margin-bottom: 100px;
-    padding-left: 50px;
+    padding-left: 5%;
 }
 
-/*  del footer */
-.box a {
-    color: #ffffff;
-    margin: 10px 0px;
-    display: inline-block;
-}
-
-/* H3 footer */
+/* H3 dentro */
 .box h3 {
     margin-bottom: 20px;
+}
+
+/* Link dentro */
+.box a {
+    color: #F8EFE1;
+    margin: 10px 0px;
+    display: inline-block;
 }
 
 /* Contenitore Lingua */
 .tongue {
     width: var(--dimesioni-contenitore-1200);
-    padding-left: 50px;
+    padding-left: 4%;
 }
 
-/* A delle lingue */
-.tongue a {
-    color: #ffffff;
-    border-top: 2px solid #ffffff;
-    display: inline-block;
-    padding-top: 50px;
-}
-
-/* Icone delle lengue */
+/* Icone dentro */
 .tongue i {
     margin-right: 10px;
 }
+
+/* Link dentro */
+.tongue a {
+    color: #F8EFE1;
+    border-top: 2px solid #F8EFE1;
+    display: inline-block;
+    padding: 50px 0px;
+}
+
+
+
+
+
+
+
