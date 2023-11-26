@@ -101,7 +101,7 @@ header {
     color:#858585;
 }
 
-/* Sezione Primaria */
+/* Sezione Need */
 .everything-need {
     align-items: center;
     justify-content: center;
@@ -109,7 +109,7 @@ header {
     text-align: start;
 }
 
-/* Dimensioni del contenitore Primario */
+/* Dimensioni del contenitore 1200px */
 .son-container-need {
     width: var(--dimesioni-contenitore-1200);
     position: relative;
@@ -161,7 +161,7 @@ header {
     padding-top: 130px;
 }
 
-/* Dimensioni del contenitore Secondario */
+/* Dimensioni del contenitore 1000px */
 .container-subscription {
     width: var(--dimensioni-contenitore-1000);
 }
@@ -331,7 +331,7 @@ header {
     margin-top: 20px;
 }
 
-/* Sezione Operation */
+/* Sezione Operations */
 .row-operations {
     width: var(--dimensioni-contenitore-1000);
     margin: 70px auto;
@@ -427,7 +427,7 @@ footer {
     display: inline-block;
 }
 
-/* Contenitore Lingua */
+/* Contenitore Tongue */
 .tongue {
     width: var(--dimesioni-contenitore-1200);
     padding-left: 4%;
