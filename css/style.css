@@ -344,6 +344,11 @@ header {
     padding: 3px;
 }
 
+/* H3 dentro */
+.col h3 {
+    margin-top: 20px;
+}
+
 /* Contenitore Grande del titolo */
 .full-col {
     margin-bottom: 30px;
@@ -360,6 +365,133 @@ header {
 .items-clients h2 {
     padding-right: 370px;
     margin-bottom: 50px;
+}
+
+/* Sezione Collaborators*/
+.container-collaborators {
+    margin-top: 50px;
+}
+
+/* immagini dentro alla Sezione Collaborators */
+.container-collaborators img {
+    display: block;
+    max-width: 70%;
+}
+
+/* Contenitore Contenuti */
+.collaboration-image {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+/* Immagini dentro */
+.collaboration-image .col-image {
+	flex-basis: calc(100% / 3 );
+}
+
+/* IMMgine dentro prende 100% */ 
+.collaboration-image .full-col-image {
+	flex-basis: 100%;
+    background-color: #B4D0E7;
+    margin-bottom: 100px;
+}
+
+/* Contentore Immagini */
+.plan-image {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+    height: 450px;
+}
+
+/* Contenitore Figure dentro */
+.plan-image figure {
+	flex-basis: calc(100% / 2);
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Firma */
+address {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+/* Contenitore del padding */
+.pad-20 {
+    padding: 20px;
+}
+
+/* Contenitore 1000px */
+.box-1000 {
+    width: var(--dimensioni-contenitore-1000);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dimensioni due Contenitore Dentro al box-1000 */
+.title-brings {
+    width: 60%;
+    padding-right: 160px;
+}
+
+.link-brings {
+    width: 40%;
+}
+
+/* H2 dentro */
+.title-brings h2{
+    font-size: 35px;
+}
+
+/* Link dentro */
+.link-brings a {
+    background-color: #FFFFFF;
+    padding: 10px 40px;
+    display: inline-block;
+    color: #000000;
+}
+
+/* Colore Sfondi */
+.color-A2D39B {
+    background-color: #A2D39B;
+}
+
+.color-61082B {
+    background-color: #61082B;
+}
+
+.color-0093CE {
+    background-color: #0093CE ;
+}
+
+.color-FF1C1C {
+    background-color: #FF1C1C;
+}
+
+.color-F5F5F5 {
+    background-color: #F5F5F5;
+}
+
+.color-D5001F {
+    background-color: #D5001F;
+}
+
+.color-B4D0E7 {
+    background-color: #B4D0E7;
+}
+
+.color-0D2481 {
+    background-color: #0D2481;
+}
+
+.color-FFD830 {
+    background-color: #FFD830;
 }
 
 /* Sezione domande frequenti */
@@ -445,10 +577,5 @@ footer {
     display: inline-block;
     padding: 50px 0px;
 }
-
-
-
-
-
 
 
