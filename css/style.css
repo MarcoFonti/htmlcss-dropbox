@@ -23,6 +23,7 @@ img {
     display: block;
 }
 
+
 /* Tutti i Link tranne .tex-line */
 a:not(.text-line) {
     text-decoration: none;
@@ -78,7 +79,6 @@ header {
 
 /* Disposizione della Navabar */
 .navbar {
-    align-items: center;
     justify-content: space-between;
     background-color: #FFFFFF;
     padding: 30px;
@@ -191,12 +191,12 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	gap: 40px;
+	gap: 30px;
 }
 
 /* Piani */
 .price-card {
-	flex-basis: calc(100% / 3 - 80px / 3);
+	flex-basis: calc(100% / 3 - 60px / 3);
 	border: 0.5px solid #858585;
 }
 
@@ -206,8 +206,6 @@ header {
 
 /* Bordo dei contenuti */
 .box-border {
-    margin-top: 40px;
-    margin: 10px;
     padding-bottom: 25px;
 }
 
@@ -255,6 +253,7 @@ header {
 /* Liste dentro */
 .container-padding li {
     padding: 10px 0px;
+    display: flex;
 }
 
 /* Link dentro */
@@ -382,7 +381,12 @@ header {
 /* immagini dentro alla Sezione Collaborators */
 .container-collaborators img {
     display: block;
-    max-width: 70%;
+    width: 60%;
+}
+
+/* Colore alle Immagini dentro */
+.container-collaborators img:not(.color-normal) {
+    filter: invert(1);
 }
 
 /* Contenitore Contenuti */
@@ -395,6 +399,7 @@ header {
 /* Immagini dentro */
 .collaboration-image .col-image {
 	flex-basis: calc(100% / 3 );
+    
 }
 
 /* IMMgine dentro prende 100% */ 
@@ -409,7 +414,7 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-    height: 450px;
+    height: 400px;
 }
 
 /* Contenitore Figure dentro */
@@ -587,11 +592,27 @@ footer {
 
 /* TODO: Hover */
 
-.text-hover:hover {
-    padding-bottom: 30px;
-    border-bottom:2px solid #858585;
+.border-color {
+    border: 15px solid transparent;
 }
 
 .border-color:hover {
-    border:3px solid #605d5e;
+    border-color: rgba(133, 133, 133, 0.5);
+}
+
+.back-blu:hover {
+    color: rgba(236, 232, 232, 0.5);
+}
+
+.navbar a:not(.back-blu):hover {
+    border-bottom: 3px solid #858585;
+    padding-bottom: 30px;
+}
+
+footer a {
+    border: 1px solid transparent;
+}
+
+footer a:hover {
+    border-bottom: 1px solid  #858585;
 }
